@@ -1,0 +1,441 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+    text-decoration: none;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+/* all the element with same properties */
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* for all the flex-colum property in short  */
+.flex-col {
+    flex-direction: column;
+}
+
+/* main container */
+.main {
+    width: 100%;
+}
+
+/* navbar  */
+.navbar {
+    height: 13vh;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    padding: 1rem;
+    background: #000;
+}
+
+/* left side navbar logo  */
+.logo {
+    width: 10%;
+    padding-right: 5rem;
+}
+
+/* brand name codeclause start */
+.brandname {
+    display: none;
+}
+
+.logo a span {
+    color: #22CFB8;
+}
+
+.logo a img {
+    width: 60px;
+}
+/* brand name codeclause end  */
+
+
+/* nav bar right side links  */
+.pages {
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 4rem;
+}
+
+/* pages containing anchor tags  */
+.pages a {
+    color: white;
+    padding: 0.6rem 1rem;
+    border-radius: 99px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* for login button  */
+.pages a:last-child {
+    color: black;
+    background: #22CFB8;
+    padding: 0.6rem 1.5rem;
+}
+
+.pages a:last-child:hover {
+    color: black;
+    background: white;
+}
+
+.pages a:hover {
+    background: #22CFB8;
+    color: #000;
+    box-shadow: 0 0 20px #22CFB8;
+}
+
+/* menu button  */
+.menu-btn {
+    height: 30px;
+    display: none;
+    transition: all ease-in-out 0.2s;
+}
+
+/* home section  */
+
+/* hero section  */
+.hero {
+    height: 87vh;
+    position: relative;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 3rem 4rem;
+}
+
+.hero::before {
+    content: "";
+    height: inherit;
+    background: url(assets/pexels-andrea-piacquadio-826349.jpg) no-repeat center center/cover;
+    filter: brightness(0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+/* tagline properties */
+.tagline {
+    width: 37%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/* h1 tag of tagline  */
+.tagline h1 {
+    font-size: 3.5vw;
+}
+
+/* h4 tag of tagline  */
+.tagline h4 {
+    font-size: 1.5vw;
+}
+
+/* about us button of tagline  */
+.tagline a {
+    padding: 0.8rem 1.5rem;
+    width: 37%;
+    text-align: center;
+    background: #22CFB8;
+    color: white;
+    border-radius: 7px;
+    border: 2px solid transparent;
+    transition: all ease 0.2s;
+}
+
+.tagline a:hover {
+    background: transparent;
+    border: 2px solid white;
+}
+
+/* count section  */
+.section {
+    gap: 2rem;
+    width: 100%;
+    padding: 4rem 3rem;
+}
+
+/* boxes containing different perks */
+.box {
+    height: 20vh;
+    width: 20%;
+    box-shadow: 0px 2px 35px rgba(0, 0, 0, 0.09);
+    position: relative;
+}
+
+.box img {
+    height: 50px;
+    position: absolute;
+    top: -1.7rem;
+    border-radius: 50%;
+    box-shadow: 0px 2px 35px rgba(0, 0, 0, 0.1);
+}
+
+.box span {
+    font-size: 2.7vw;
+    font-weight: 600;
+}
+
+.box p {
+    color: rgb(80, 80, 80);
+    font-weight: lighter;
+}
+
+/* highlights */
+.highlights {
+    width: 100%;
+    height: 85vh;
+    background: transparent;
+    color: white;
+    padding: 6rem 5rem;
+    position: relative;
+}
+.highlights::before {
+    content: "";
+    position: absolute;
+    top: 3rem;
+    right: 0;
+    left: 0;
+    background: rgb(31, 31, 31);
+    width: 100%;
+    height: 90%;
+    z-index: -1;
+    transform: skewY(-2.5deg);
+}
+
+/* in highlights about part  */
+.about {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 1.5rem;
+}
+
+.about button {
+    padding: 0.6rem 1.9rem;
+    border-radius: 90px;
+    border: 2px solid #22CFB8;
+    background: rgb(31, 31, 31);
+    color: white;
+    transition: all ease-in-out 0.1s;
+    cursor: pointer;
+    font-weight: bold;
+}
+.about button:hover {
+    background: #22CFB8;
+    color: #000;
+}
+
+/* benifits of joining boxes  */
+.benifits {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    padding: 0 0 1rem 3rem;
+    gap: 3rem;
+}
+.first-box {
+    width: 35%;
+    gap: 2rem;
+}
+
+.second-box {
+    width: 35%;
+    gap: 2rem;
+}
+
+.benifit {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 1rem;
+}
+
+.benifit > img {
+    height: 3vw;
+}
+.benifit > p {
+    color: rgb(172, 172, 172);
+}
+/* testemonial section  */
+.testemonials {
+    gap: 1rem;
+    padding-top: 3rem;
+}
+
+/* unserline below the h1 tag  */
+.underline {
+    height: 3px;
+    width: 5%;
+    background: #22CFB8;
+}
+
+/* h1 and p tag on the start of testemonials */
+.testemonials h1,
+.testemonials p {
+    text-align: center;
+}
+
+/* cards for the testemonials */
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3rem;
+    margin-top: 1rem;
+    padding: 5rem 1rem;
+    --mask:
+        radial-gradient(34.99px at 50% 48.00px, #000 99%, #0000 101%) calc(50% - 60px) 0/120px 100%,
+        radial-gradient(34.99px at 50% -18px, #0000 99%, #000 101%) 50% 30px/120px 100% repeat-x;
+    -webkit-mask: var(--mask);
+    mask: var(--mask);
+    background: #2b00ff;
+    background: linear-gradient(0deg, #2b00ff 0%, #00fff7 60%);
+    background: -webkit-linear-gradient(0deg, #2b00ff 0%, #00fff7 60%);
+    background: -moz-linear-gradient(0deg, #2b00ff 0%, #00fff7 60%);
+    height: fit-content;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 50px));
+}
+
+/* individual cards  */
+.card {
+    background: rgb(195, 240, 255);
+    padding: 2rem;
+    width: 25%;
+    border-radius: 10px;
+    height: fit-content;
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* card top part */
+.top-part {
+    gap: 0.7rem;
+}
+
+.dp {
+    width: 80px;
+    border-radius: 7px;
+}
+
+/* card bottom part  */
+.bottom-part {
+    margin-top: 2rem;
+}
+
+.double-quotes {
+    font-size: 30px;
+}
+
+/* para about the intern review  */
+.review {
+    font-size: 20px;
+    font-style: italic;
+}
+
+
+/* footer  */
+.footer {
+    width: 100%;
+    height: fit-content;
+    padding: 4rem 2rem 2rem 2rem;
+    background: #000;
+    color: white;
+    clip-path: polygon(0 0, 100% 50px, 100% 100%, 0 100%);
+    margin-top: -2.5rem;
+}
+
+/* footer top part containing social icons and other links  */
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* icons div */
+.social-icons {
+    display: flex;
+    gap: 6px;
+}
+
+/* icons containg div  */
+.icon {
+    height: 35px;
+    width: 35px;
+    background: #313131;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all ease 0.2s;
+}
+
+.icon img {
+    height: 25px;
+    border-radius: 50%;
+    filter: invert(1);
+}
+
+/* icons hover effects  */
+.icon:nth-child(1):hover {
+    background: blue;
+}
+
+.icon:nth-child(2):hover {
+    background: green;
+}
+
+.icon:nth-child(3):hover {
+    background: purple;
+}
+
+.icon:nth-child(4):hover {
+    background: darkblue;
+}
+
+/* links  */
+.links {
+    display: flex;
+    gap: 1rem;
+}
+
+/* links anchor tags  */
+.links a {
+    color: white;
+    border-radius: 99px;
+    padding: 0.6rem 1rem;
+    transition: all ease 0.2s;
+}
+
+.links a:hover {
+    background: #22CFB8;
+    box-shadow: 0 0 20px #22CFB8;
+}
+
+/* footer bottom part containing copyright */
+.footer-bottom {
+    width: 100%;
+    gap: 0.5rem;
+    padding-top: 2rem;
+}
+
+
